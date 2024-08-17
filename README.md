@@ -16,7 +16,7 @@ This project performs a sentiment analysis on Google search results related to t
 
 ## How It Works
 
-1. **Google Search Results**: The script uses the SerpAPI to fetch Google search results for the query `"IQ Viet My tutoring center reviews"`.
+1. **Google Search Results**: The script uses the SerpAPI to fetch Google search results for the query `"IQ Viet My reviews"`.
 2. **Text Preprocessing**: The raw text snippets from the search results are cleaned and processed to remove stopwords, punctuation, and to lemmatize the words.
 3. **Sentiment Analysis**: Each snippet undergoes sentiment analysis using the VADER SentimentIntensityAnalyzer, which classifies the sentiment as Positive, Negative, or Neutral.
 4. **Visualization**: The results are visualized in a bar chart that shows the distribution of sentiments.
