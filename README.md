@@ -4,6 +4,9 @@
 
 This project performs a sentiment analysis on Google search results related to the tutoring center IQ Viet My. The goal is to analyze public sentiment (Positive, Neutral, or Negative) about the center based on search result snippets, providing insights into how the center is perceived online.
 
+![Sentiment Analysis of IQ Viet My Tutoring Centers](https://github.com/user-attachments/assets/99398748-9651-43a2-8778-d6a98661faff)
+
+
 ## Project Structure
 
 - **main.py**: The main Python script that fetches Google search results using SerpAPI, preprocesses the text data, performs sentiment analysis using VADER, and visualizes the results.
