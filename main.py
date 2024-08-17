@@ -23,7 +23,7 @@ nltk.download('wordnet')
 
 # Initialize the GoogleSearch client
 client = GoogleSearch({
-    "q": "Ukraine Russia Conflict News",
+    "q": "IQ Viet My reviews",
     "engine": "google",
     "hl": 'en',
     "gl": "us",
@@ -33,7 +33,10 @@ client = GoogleSearch({
 
 # Fetch search results
 results = client.get_dict()
-snippets = [result['snippet'] for result in results['organic_results'] if 'Ukraine' in result['snippet'] or 'Russia' in result['snippet']]
+snippets = [result['snippet'] for result in results['organic_results']]
+
+#Below Commented out Code is for Sentiment Analysis for another project I am working on
+#snippets = [result['snippet'] for result in results['organic_results'] if 'Ukraine' in result['snippet'] or 'Russia' in result['snippet']]
 
 # Preprocess the text data
 lemmatizer = WordNetLemmatizer()
@@ -64,8 +67,8 @@ df = pd.DataFrame({
 })
 
 sentiment_counts = df['Sentiment'].value_counts()
-sentiment_counts.plot(kind='bar', color=['red', 'blue', 'green'])
-plt.title('Sentiment Analysis of Ukraine Russian Conflict')
+sentiment_counts.plot(kind='bar', color=['green', 'blue', 'red'])
+plt.title('Sentiment Analysis of IQ Viet My Tutoring Centers')
 plt.xlabel('Sentiment')
 plt.ylabel('Count')
 plt.show()
